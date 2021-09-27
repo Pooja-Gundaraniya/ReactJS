@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import "./formik.css"
 const Login = () => {
@@ -7,10 +8,21 @@ const Login = () => {
 
     const submitForm = (e: any)=>{
         e.preventDefault();
-        const newEntry = {userName:userName, password:password};
-        console.log(newEntry,"newEntry");
-        setAllEntry([...allEntry, newEntry]);
+        // const newEntry = {userName:userName, password:password};
+        // console.log(newEntry,"newEntry");
+        // setAllEntry([...allEntry, newEntry]);
+
+        axios.post('http://localhost:3000/data',{
+            "username":`${userName}`,
+            "password":`${password}`
+        })
+        .then(function(response){
+            console.log(response);
+            alert(`successfull login ${userName}`)
+        })
+
     }
+
 
     return (
         <>

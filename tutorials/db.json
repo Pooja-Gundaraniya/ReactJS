@@ -1,19 +1,34 @@
 {
-  "posts": [
+  "data": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "username": "json-server",
+      "password": "typicode"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "function () { [native code] }",
+      "password": "function () { [native code] }",
+      "id": 2
+    },
+    {
+      "username": "abcd",
+      "password": "udhsjad",
+      "id": 3
+    },
+    {
+      "username": "jay",
+      "password": "bdjabdija",
+      "id": 4
+    },
+    {
+      "username": "vef",
+      "password": "grrg",
+      "id": 5
+    },
+    {
+      "username": "vef",
+      "password": "grrg",
+      "id": 6
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
