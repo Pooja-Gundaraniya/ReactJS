@@ -1,14 +1,13 @@
 import React from 'react';
 import Login from "./login";
 import FormikLogin from './formiklogin';
-import Yup from './yup';
-
+import Yups from './yup';
 const Formik = () =>{
      return(
          <>
          {/* <Login/> */}
          {/* <FormikLogin/> */}
-         <Yup/>
+         <Yups/>
          </>
      )
  }
