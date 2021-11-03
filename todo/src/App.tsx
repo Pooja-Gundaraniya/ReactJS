@@ -1,12 +1,20 @@
 import './App.css';
 import Todos from './components/todo';
+import TodoList from './components/todolist';
+import { Provider } from 'react-redux';
+import store from './components/store';
 
 
 
-const  App=() =>{
+const App = () => {
   return (
+    <>
+      <Provider store={store}>
 
-   <Todos/>
+        {/* <Todos /> */}
+        <TodoList />
+      </Provider>
+    </>
   );
 }
 
